@@ -23,8 +23,7 @@ public class redgreen {
         frame.add(red);
         frame.add(green);
         frame.add(lbl);
-        frame.setSize(400, 160
-        );
+        frame.setSize(400, 160);
         frame.setVisible(true);
 
     }

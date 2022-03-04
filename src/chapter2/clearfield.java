@@ -14,7 +14,7 @@ public class clearfield {
         frame.setLayout(new FlowLayout());
         SButton clear = new SButton("Clear");
         Stream<String> sClearIt = clear.sClicked.map(u -> "");
-        STextField text = new STextField(sClearIt, "Helloe");
+        STextField text = new STextField(sClearIt, "Hello");
 
         frame.add(text);
         frame.add(clear);

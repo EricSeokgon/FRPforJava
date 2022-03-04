@@ -25,7 +25,7 @@ public class spinner {
             Stream<Integer> sPlusDelta = plus.sClicked.map(u -> 1);
             Stream<Integer> sMinusDelta = minus.sClicked.map(u -> -1);
             Stream<Integer> sDelta = sPlusDelta.orElse(sMinusDelta);
-            Stream<Integer> sUpdate = sPlusDelta.snapshot(value, (delta, value_) -> delta + value_);
+            Stream<Integer> sUpdate = sDelta.snapshot(value, (delta, value_) -> delta + value_);
             value.loop(sUpdate.hold(0));
         });
         view.setSize(400, 160);
